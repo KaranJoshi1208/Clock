@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/clock"
+        android:title="Clock"
+        android:icon="@drawable/icon_clock"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/stopwatch"
+        android:title="Stop Watch"
+        android:icon="@drawable/icon_stopwatch"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/timer"
+        android:title="Timer"
+        android:icon="@drawable/icon_hourglass"
+        app:showAsAction="always"/>
+
+</menu>

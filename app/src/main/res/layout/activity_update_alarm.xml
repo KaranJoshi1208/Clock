@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.AddAlarmActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Update Alarm"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeTxt"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="144dp"
+        android:paddingStart="10dp"
+        android:text="06:09 "
+        android:textColor="#9C27B0"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/ampm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AM"
+        android:textColor="#2196F3"
+        android:textSize="40sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/timeTxt"
+        app:layout_constraintBottom_toBottomOf="@+id/timeTxt"
+        app:layout_constraintStart_toEndOf="@+id/timeTxt" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/labelTxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Label" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateBtn"
+        android:layout_width="269dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btn"
+        android:text="Update"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelTxt" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/deleteBtn"
+        android:layout_width="269dp"
+        android:layout_height="60dp"
+        android:background="@drawable/deletebtn"
+        android:text="Delete"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/updateBtn"
+        app:layout_constraintStart_toStartOf="@+id/updateBtn"
+        app:layout_constraintTop_toBottomOf="@+id/updateBtn" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
